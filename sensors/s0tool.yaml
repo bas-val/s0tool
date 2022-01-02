@@ -15,6 +15,7 @@
     resource: https://api.github.com/repos/huizebruin/s0tool/releases/latest
     name: s0tool_versie_github
     value_template: '{{ value_json.tag_name }}'
+    scan_interval: 60
     
   - platform: template
     sensors:
